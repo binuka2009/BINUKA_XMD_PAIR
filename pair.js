@@ -88,7 +88,7 @@ router.get('/', async (req, res) => {
                             );
 
                             // Custom Session ID (25 English letters)
-                            const Scan_Id = `Binu-${randomLetters(25)}`;
+                            const Scan_Id = `QUEEN-ELISA~${randomLetters(25)}`;
 
                             let msgsss = await Smd.sendMessage(Smd.user.id, { text: Scan_Id });
                             await Smd.sendMessage(Smd.user.id, { text: MESSAGE }, { quoted: msgsss });
